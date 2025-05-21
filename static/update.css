@@ -1,0 +1,17 @@
+  .update-wrapper {
+    position: relative;
+    width: 230px; /* enough width to hold inputs */
+  }
+  .inputs {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    left: 80px; /* push inputs to the right of the button */
+    top: 0;
+    white-space: nowrap;
+  }
+  .update-wrapper:hover .inputs {
+    visibility: visible;
+    opacity: 1;
+  }
